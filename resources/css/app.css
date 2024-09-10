@@ -1,3 +1,113 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; /* Default sans-serif */
+    background-color: #4b2a42;
+    color: white;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Spread out the elements evenly */
+    align-items: center; /* Align items vertically in the center */
+    padding: 15px 30px;
+    background-color: #8b2266; /* Your header color */
+}
+
+/* Left Section - Links */
+.left-section, .right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Spacing between the elements */
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Center Section - Name and Subtitle */
+.center-section {
+    text-align: center;
+    flex-grow: 2; /* Make it take more space */
+}
+
+.name {
+    font-family: 'Great Vibes', cursive; /* Script font for the name */
+    font-size: 48px; /* Adjust size as needed */
+    color: white;
+    margin: 0;
+}
+
+.subtitle {
+    font-family: 'Montserrat', sans-serif; /* Sans-serif font for the subtitle */
+    font-size: 18px; /* Adjust size as needed */
+    letter-spacing: 3px; /* Adds spacing between letters */
+    color: white;
+    margin: 5px 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 5px 0;
+    display: inline-block;
+}
+
+/* Right Section - Social Icons */
+.nav-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-section a {
+    text-decoration: none;
+}
+
+
+.hero-section {
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero-text h1, .hero-text p {
+    display: inline-block;
+    background-color: #8b1359;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero-text h1 {
+    background-color: #8b1359;
+}
+
+.cta-buttons a {
+    display: inline-block;
+    background-color: #8b1359;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cta-buttons a:hover {
+    background-color: #8b1359;
+}
